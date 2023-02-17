@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-[#ebebeb] flex justify-center items-center min-h-screen">
+    <div class="bg-[#f2f2f2] flex flex-col gap-y-2 max-w-max md:max-w-lg">
+        <span class="bg-gradient-to-r from-[#e132fe] to-[#3ca2f8] h-3 w-full"></span>
+        <h1 class="text-[#273195] font-bold m-2.5 mx-5 text-2xl">In progress</h1>
+
+        <!-- UBER Card -->
+        <div class="component flex bg-white px-6 p-3 gap-x-3 mx-5 rounded shadow-lg transition hover:cursor-pointer">
+            <div
+                class="img-wrapper overflow-hidden w-16 h-16 rounded-full shadow-lg shadow-blue-100 flex justify-center items-center">
+                <img class="w-12 h-12 object-cover"
+                    src="https://cdn.iphoneincanada.ca/wp-content/uploads/2016/02/Screen-Shot-2016-02-02-at-5.23.52-PM.png"
+                    alt="">
+            </div>
+            <div class="flex flex-col gap-y-1 max-w-max">
+                <div class="spans-wrapper flex justify-between">
+                    <span class="bg-[#f26092] text-white px-1.5 p-0.5 rounded-lg text-xs">High</span>
+                    <span class="text-[#5f6d73]">18 Dec. 2017</span>
+                </div>
+                <h2 class="text-[#273195] text-lg font-bold">Prepare structural documentation</h2>
+                <div class="tags">
+                    <span class="bg-[#f4f4f4] text-[#5f6d73] text-xs rounded-lg p-0.5 px-1.5">Development</span>
+                    <span class="bg-[#f4f4f4] text-[#5f6d73] text-xs rounded-lg p-0.5 px-1.5">Architecture</span>
+                </div>
+                <div class="stats-container flex justify-between mt-3.5">
+                    <div class="users flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#5f6d73" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                        </svg>
+                        <p class="text-[#5f6d73] text-xs">3 people working on this</p>
+                    </div>
+                    <div class="comments flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-dots"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#5f6d73" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4"></path>
+                            <path d="M12 11l0 .01"></path>
+                            <path d="M8 11l0 .01"></path>
+                            <path d="M16 11l0 .01"></path>
+                        </svg>
+                        <p class="text-[#5f6d73] text-xs">17 Comments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOSCH Card -->
+        <div class="component flex bg-white px-6 p-3 gap-x-3 mx-5 rounded shadow-lg transition hover:cursor-pointer">
+            <div
+                class="img-wrapper overflow-hidden w-16 h-16 rounded-full shadow-lg shadow-blue-100 flex justify-center items-center">
+                <img class="w-12 h-12 object-cover"
+                    src="https://secure.img1-cg.wfcdn.com/im/59541679/resize-h600-w600%5Ecompr-r85/2128/212882425/Bosch.jpg"
+                    alt="">
+            </div>
+            <div class="flex flex-col gap-y-1 max-w-max">
+                <div class="spans-wrapper flex justify-between">
+                    <span class="bg-[#f26092] text-white px-1.5 p-0.5 rounded-lg text-xs">Medium</span>
+                    <span class="text-[#5f6d73]">18 Dec. 2017</span>
+                </div>
+                <h2 class="text-[#273195] text-lg font-bold">Update requirements list</h2>
+                <div class="tags">
+                    <span class="bg-[#f4f4f4] text-[#5f6d73] text-xs rounded-lg p-0.5 px-1.5">Development</span>
+                    <span class="bg-[#f4f4f4] text-[#5f6d73] text-xs rounded-lg p-0.5 px-1.5">Management</span>
+                </div>
+                <div class="stats-container flex justify-between mt-3.5">
+                    <div class="users flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#5f6d73" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                        </svg>
+                        <p class="text-[#5f6d73] text-xs">2 people working on this</p>
+                    </div>
+                    <div class="comments flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-dots"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#5f6d73" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4"></path>
+                            <path d="M12 11l0 .01"></path>
+                            <path d="M8 11l0 .01"></path>
+                            <path d="M16 11l0 .01"></path>
+                        </svg>
+                        <p class="text-[#5f6d73] text-xs">8 Comments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOSCH 2 Card -->
+        <div class="component flex bg-white px-6 p-3 gap-x-3 mx-5 rounded shadow-lg transition hover:cursor-pointer">
+            <div
+                class="img-wrapper overflow-hidden w-16 h-16 rounded-full shadow-lg shadow-blue-100 flex justify-center items-center">
+                <img class="w-12 h-12 object-cover"
+                    src="https://secure.img1-cg.wfcdn.com/im/59541679/resize-h600-w600%5Ecompr-r85/2128/212882425/Bosch.jpg"
+                    alt="">
+            </div>
+            <div class="flex flex-col gap-y-1 max-w-max">
+                <div class="spans-wrapper flex justify-between">
+                    <span class="bg-[#f26092] text-white px-1.5 p-0.5 rounded-lg text-xs">Low</span>
+                    <span class="text-[#5f6d73]">18 Dec. 2017</span>
+                </div>
+                <h2 class="text-[#273195] text-lg font-bold">New UI dashboard</h2>
+                <div class="tags">
+                    <span class="bg-[#f4f4f4] text-[#5f6d73] text-xs rounded-lg p-0.5 px-1.5">Development</span>
+                    <span class="bg-[#f4f4f4] text-[#5f6d73] text-xs rounded-lg p-0.5 px-1.5">Architecture</span>
+                </div>
+                <div class="stats-container flex justify-between mt-3.5">
+                    <div class="users flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#5f6d73" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                        </svg>
+                        <p class="text-[#5f6d73] text-xs">7 people working on this</p>
+                    </div>
+                    <div class="comments flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-dots"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#5f6d73" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4"></path>
+                            <path d="M12 11l0 .01"></path>
+                            <path d="M8 11l0 .01"></path>
+                            <path d="M16 11l0 .01"></path>
+                        </svg>
+                        <p class="text-[#5f6d73] text-xs">7 Comments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ADIDAS Card -->
+        <div class="component flex bg-white px-6 p-3 gap-x-3 mx-5 rounded shadow-lg transition hover:cursor-pointer">
+            <div
+                class="img-wrapper overflow-hidden w-16 h-16 rounded-full shadow-lg shadow-blue-100 flex justify-center items-center">
+                <img class="w-12 h-12 object-cover" src="https://cdn.freebiesupply.com/logos/large/2x/adidas-logo.png"
+                    alt="">
+            </div>
+            <div class="flex flex-col gap-y-1 max-w-max">
+                <div class="spans-wrapper flex justify-between">
+                    <span class="bg-[#f26092] text-white px-1.5 p-0.5 rounded-lg text-xs">Low</span>
+                    <span class="text-[#5f6d73]">18 Dec. 2017</span>
+                </div>
+                <h2 class="text-[#273195] text-lg font-bold">Initial landing page concepts</h2>
+                <div class="tags">
+                    <span class="bg-[#f4f4f4] text-[#5f6d73] text-xs rounded-lg p-0.5 px-1.5">Development</span>
+                    <span class="bg-[#f4f4f4] text-[#5f6d73] text-xs rounded-lg p-0.5 px-1.5">Architecture</span>
+                </div>
+                <div class="stats-container flex justify-between mt-3.5">
+                    <div class="users flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#5f6d73" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0"></path>
+                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                        </svg>
+                        <p class="text-[#5f6d73] text-xs">4 people working on this</p>
+                    </div>
+                    <div class="comments flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-dots"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="#5f6d73" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M4 21v-13a3 3 0 0 1 3 -3h10a3 3 0 0 1 3 3v6a3 3 0 0 1 -3 3h-9l-4 4"></path>
+                            <path d="M12 11l0 .01"></path>
+                            <path d="M8 11l0 .01"></path>
+                            <path d="M16 11l0 .01"></path>
+                        </svg>
+                        <p class="text-[#5f6d73] text-xs">2 Comments</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- New Card -->
+        <div class="flex justify-center items-center p-6 transition hover:scale-110 hover:cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="35" height="35"
+                viewBox="0 0 24 24" stroke-width="2" stroke="#9da5a9" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 5l0 14"></path>
+                <path d="M5 12l14 0"></path>
+            </svg>
+            <span class="text-[#9da5a9] text-xl font-semibold"> Add new card</span>
+        </div>
+        <span class="bg-gradient-to-r from-[#e132fe] to-[#3ca2f8] h-3 w-full"></span>
+    </div>
+
+</body>
+
+</html>
